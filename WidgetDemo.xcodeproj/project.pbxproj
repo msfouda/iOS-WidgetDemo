@@ -14,7 +14,35 @@
 		5443E7631D216976004E41AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5443E7611D216976004E41AE /* LaunchScreen.storyboard */; };
 		5443E76B1D217051004E41AE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5443E76A1D217051004E41AE /* Networking.swift */; };
 		5443E76D1D2172E1004E41AE /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5443E76C1D2172E1004E41AE /* Quote.swift */; };
+		D4AEF6482113A727001868D9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AEF6472113A727001868D9 /* NotificationCenter.framework */; };
+		D4AEF64B2113A727001868D9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AEF64A2113A727001868D9 /* TodayViewController.swift */; };
+		D4AEF64E2113A727001868D9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AEF64C2113A727001868D9 /* MainInterface.storyboard */; };
+		D4AEF6522113A727001868D9 /* qouatesWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4AEF6452113A726001868D9 /* qouatesWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4AEF6502113A727001868D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5443E74D1D216976004E41AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4AEF6442113A726001868D9;
+			remoteInfo = qouatesWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4AEF6562113A727001868D9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4AEF6522113A727001868D9 /* qouatesWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5443E7551D216976004E41AE /* WidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +54,11 @@
 		5443E7641D216976004E41AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5443E76A1D217051004E41AE /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		5443E76C1D2172E1004E41AE /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		D4AEF6452113A726001868D9 /* qouatesWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = qouatesWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AEF6472113A727001868D9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D4AEF64A2113A727001868D9 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		D4AEF64D2113A727001868D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D4AEF64F2113A727001868D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4AEF6422113A726001868D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AEF6482113A727001868D9 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				5443E7571D216976004E41AE /* WidgetDemo */,
+				D4AEF6492113A727001868D9 /* qouatesWidget */,
+				D4AEF6462113A726001868D9 /* Frameworks */,
 				5443E7561D216976004E41AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				5443E7551D216976004E41AE /* WidgetDemo.app */,
+				D4AEF6452113A726001868D9 /* qouatesWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +114,24 @@
 			path = WidgetDemo;
 			sourceTree = "<group>";
 		};
+		D4AEF6462113A726001868D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AEF6472113A727001868D9 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4AEF6492113A727001868D9 /* qouatesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D4AEF64A2113A727001868D9 /* TodayViewController.swift */,
+				D4AEF64C2113A727001868D9 /* MainInterface.storyboard */,
+				D4AEF64F2113A727001868D9 /* Info.plist */,
+			);
+			path = qouatesWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,15 +142,34 @@
 				5443E7511D216976004E41AE /* Sources */,
 				5443E7521D216976004E41AE /* Frameworks */,
 				5443E7531D216976004E41AE /* Resources */,
+				D4AEF6562113A727001868D9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D4AEF6512113A727001868D9 /* PBXTargetDependency */,
 			);
 			name = WidgetDemo;
 			productName = WidgetDemo;
 			productReference = 5443E7551D216976004E41AE /* WidgetDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D4AEF6442113A726001868D9 /* qouatesWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4AEF6552113A727001868D9 /* Build configuration list for PBXNativeTarget "qouatesWidget" */;
+			buildPhases = (
+				D4AEF6412113A726001868D9 /* Sources */,
+				D4AEF6422113A726001868D9 /* Frameworks */,
+				D4AEF6432113A726001868D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qouatesWidget;
+			productName = qouatesWidget;
+			productReference = D4AEF6452113A726001868D9 /* qouatesWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,13 +177,17 @@
 		5443E74D1D216976004E41AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = CareerFoundry;
 				TargetAttributes = {
 					5443E7541D216976004E41AE = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0900;
+					};
+					D4AEF6442113A726001868D9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -120,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				5443E7541D216976004E41AE /* WidgetDemo */,
+				D4AEF6442113A726001868D9 /* qouatesWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +218,14 @@
 				5443E7631D216976004E41AE /* LaunchScreen.storyboard in Resources */,
 				5443E7601D216976004E41AE /* Assets.xcassets in Resources */,
 				5443E75E1D216976004E41AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4AEF6432113A726001868D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AEF64E2113A727001868D9 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +243,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4AEF6412113A726001868D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AEF64B2113A727001868D9 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4AEF6512113A727001868D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4AEF6442113A726001868D9 /* qouatesWidget */;
+			targetProxy = D4AEF6502113A727001868D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5443E75C1D216976004E41AE /* Main.storyboard */ = {
@@ -166,6 +276,14 @@
 				5443E7621D216976004E41AE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D4AEF64C2113A727001868D9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4AEF64D2113A727001868D9 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -274,7 +392,9 @@
 		5443E7681D216976004E41AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WidgetDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -288,7 +408,9 @@
 		5443E7691D216976004E41AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WidgetDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -296,6 +418,55 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		D4AEF6532113A727001868D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = qouatesWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.careerfoundry.WidgetDemo.qouatesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4AEF6542113A727001868D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = qouatesWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.careerfoundry.WidgetDemo.qouatesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -316,6 +487,15 @@
 			buildConfigurations = (
 				5443E7681D216976004E41AE /* Debug */,
 				5443E7691D216976004E41AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4AEF6552113A727001868D9 /* Build configuration list for PBXNativeTarget "qouatesWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AEF6532113A727001868D9 /* Debug */,
+				D4AEF6542113A727001868D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
