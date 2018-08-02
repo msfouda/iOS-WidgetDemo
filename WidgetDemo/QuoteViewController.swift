@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import QouatesNetworking
 
 class QuoteViewController: UIViewController {
 
