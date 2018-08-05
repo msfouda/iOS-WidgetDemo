@@ -27,8 +27,8 @@ open class Networking: NSObject {
             }
             
             do {
-                let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as! [String:String]
-                let quote = Quote(quoteDictionary: jsonResponse)
+                let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as! [Any]
+                let quote = Quote(quoteDictionary: jsonResponse.first as! [String : String])
                 completion(quote, nil)
             } catch {
                 print("JSON error: \(error)")
