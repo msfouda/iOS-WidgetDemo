@@ -19,8 +19,8 @@
 		D4AEF6602113AF14001868D9 /* QouatesNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AEF65E2113AF14001868D9 /* QouatesNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4AEF6632113AF14001868D9 /* QouatesNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AEF65C2113AF14001868D9 /* QouatesNetworking.framework */; };
 		D4AEF6642113AF14001868D9 /* QouatesNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4AEF65C2113AF14001868D9 /* QouatesNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D4AEF66B2113AF92001868D9 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5443E76A1D217051004E41AE /* Networking.swift */; };
-		D4AEF66C2113AF92001868D9 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5443E76C1D2172E1004E41AE /* Quote.swift */; };
+		D4FE27A12116598800952A4F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5443E76C1D2172E1004E41AE /* Quote.swift */; };
+		D4FE27A22116598800952A4F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5443E76A1D217051004E41AE /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -339,8 +339,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4AEF66C2113AF92001868D9 /* Quote.swift in Sources */,
-				D4AEF66B2113AF92001868D9 /* Networking.swift in Sources */,
+				D4FE27A12116598800952A4F /* Quote.swift in Sources */,
+				D4FE27A22116598800952A4F /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,7 +588,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = QouatesNetworking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr-sobhi.QouatesNetworking";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -621,7 +621,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = QouatesNetworking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr-sobhi.QouatesNetworking";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
